@@ -8,6 +8,8 @@ def update_server_config(file_path,key,value):
             else:
                 file.write(line)
 
+server_config_file = 'server.conf'
+key_to_update = 'MAX_CONNECTIONS'
 new_value = '1000'                
 
-update_server_config("server.conf","MAX_CONNECTIONS",new_value)
+update_server_config(server_config_file,key_to_update,new_value)
